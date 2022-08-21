@@ -1,5 +1,6 @@
 ﻿$primary-bg: #4c4545;
 $primary-alt-bg: black;
+$text-color: white;
 
 .top-navbar {
     width: 100%;
@@ -10,11 +11,22 @@ $primary-alt-bg: black;
         float: left;
         text-align: center;
         padding: 12px;
-        color: white;
+        color: $text-color;
         text-decoration: none;
     }
 
     & a:hover {
         background-color: $primary-alt-bg;
     }
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $primary-bg;
+    color: $text-color;
+    text-align: center;
 }

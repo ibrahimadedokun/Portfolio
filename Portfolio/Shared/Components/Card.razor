@@ -1,0 +1,32 @@
+﻿<div class="card bg-light">
+    <div class="text-center">
+        <img class="card-img-top" src="@ImageSrc" alt="@ImageAlt" style="width: 50%">
+    </div>
+    
+    <div class="card-body">
+        <h5 class="card-title">@CardTitle</h5>
+        <p class="card-text">@CardText</p>
+        <NavLink href="@RedirectToPage" class="btn btn-secondary">@ButtonText.ToUpperInvariant()</NavLink>
+    </div>
+
+</div>
+
+@code {
+    [Parameter]
+    public string ImageSrc { get; set; } = string.Empty;
+
+    [Parameter]
+    public string ImageAlt{ get; set; } = string.Empty;
+
+    [Parameter]
+    public string CardTitle { get; set; } = string.Empty;
+
+    [Parameter]
+    public string CardText { get; set; } = string.Empty;
+
+    [Parameter]
+    public string RedirectToPage { get; set; } = string.Empty;
+
+    [Parameter]
+    public string ButtonText { get; set; } = string.Empty;
+}
