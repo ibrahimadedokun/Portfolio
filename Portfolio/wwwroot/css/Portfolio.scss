@@ -1,0 +1,20 @@
+﻿$primary-bg: #4c4545;
+$primary-alt-bg: black;
+
+.top-navbar {
+    width: 100%;
+    background-color: $primary-bg;
+    overflow: auto;
+
+    & a {
+        float: left;
+        text-align: center;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+    }
+
+    & a:hover {
+        background-color: $primary-alt-bg;
+    }
+}

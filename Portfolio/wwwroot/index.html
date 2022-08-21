@@ -8,11 +8,26 @@
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
+    <link href="css/Portfolio.min.css" rel="stylesheet" />
     <link href="Portfolio.styles.css" rel="stylesheet" />
+
+    <style>
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div id="app">Loading...</div>
+    <div id="app">
+        <div class="spinner"></div>
+    </div>
 
     <div id="blazor-error-ui">
         An unhandled error has occurred.

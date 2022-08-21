@@ -1,21 +1,16 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Exo, Tahoma, sans-serif;
 }
 
-h1:focus {
-    outline: none;
-}
-
-a, .btn-link {
-    color: #0071c1;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+.spinner {
+    border: 8px solid gray;
+    border-radius: 50%;
+    border-top: 8px solid #2c2b2b;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
 }
 
 .content {
