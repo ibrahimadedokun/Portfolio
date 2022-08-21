@@ -1,12 +1,32 @@
 ﻿@page "/"
 
-<div class="text-center">
+<div class="p-2 text-center">
     <h1>I am Ibrahim Adedokun</h1>
 
     <div>
         <p>
             Welcome to my humble digital abode.
         </p>
+    </div>
+</div>
+
+<div class="row text-center">
+    <div class="col">
+        <Card CardTitle="Software Development"
+              CardText="Wanna see how far I've come with software development?"
+              ButtonText="Take me there"
+              RedirectToPage="software"
+              ImageAlt="Software logo"
+              ImageSrc="img/software.png" />
+    </div>
+
+    <div class="col">
+        <Card CardTitle="Engineering"
+              CardText="Wanna see where I stopped as far as Engineering is concerned?"
+              ButtonText="Let's go"
+              RedirectToPage="engineering"
+              ImageAlt="Engineering logo"
+              ImageSrc="img/engineering.png" />
     </div>
 </div>
 

@@ -4,15 +4,6 @@ html, body {
     font-family: Exo, Tahoma, sans-serif;
 }
 
-.spinner {
-    border: 8px solid gray;
-    border-radius: 50%;
-    border-top: 8px solid #2c2b2b;
-    width: 60px;
-    height: 60px;
-    animation: spin 2s linear infinite;
-}
-
 .content {
     padding-top: 1.1rem;
 }
