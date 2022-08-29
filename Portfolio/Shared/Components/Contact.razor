@@ -1,0 +1,38 @@
+﻿@page "/contact"
+
+@using Portfolio.Shared.Models;
+
+<h3>Contact Me</h3>
+
+@*Email*@
+
+<div class="container-fluid">
+    <EditForm Model="@NewMessage" OnValidSubmit="@Submit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="row m-1">
+            <label class="col-1">Subject: </label>
+            <InputText class="col form-control" @bind-Value="@NewMessage!.Subject"></InputText>
+        </div>
+
+        <div class="row m-1">
+            <label class="col-1">Content: </label>
+            <InputTextArea class="col form-control" @bind-Value="@NewMessage!.Content"></InputTextArea>
+        </div>
+
+        <input type="submit" class="btn btn-secondary m-1 float-end" value="SEND" />
+    </EditForm>
+</div>
+
+@*LinkedIn*@
+
+@*Message*@
+
+@code {
+    private Message? NewMessage { get; set; } = new Message();
+
+    private void Submit(){
+
+    }
+}
